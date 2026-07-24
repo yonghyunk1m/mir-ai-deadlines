@@ -1,0 +1,333 @@
+# ============================================================
+# Conference data for MIR·AI Deadlines
+# ------------------------------------------------------------
+# status: confirmed  -> officially announced by the venue
+#         estimated  -> predicted from previous years (shown dashed)
+# timezone: AoE (UTC-12) unless stated otherwise
+# deadline format: "YYYY-MM-DD HH:MM"
+# monitor.url: page watched by the auto-monitor GitHub Action
+# ============================================================
+
+meta:
+  updated: "2026-07-24"
+
+conferences:
+  # ---------------- Music / MIR ----------------
+  - id: ismir2026-lbd
+    title: ISMIR LBD
+    year: 2026
+    full_name: ISMIR 2026 Late-Breaking / Demo Session
+    link: https://ismir2026.ismir.net/
+    deadline: "2026-10-05 23:59"
+    timezone: AoE
+    date: Nov 8–12, 2026
+    start: "2026-11-08"
+    end: "2026-11-12"
+    place: Abu Dhabi, UAE
+    categories: [music]
+    status: estimated
+    note: Estimated from previous years — LBD CFP not yet announced
+    monitor:
+      url: https://ismir2026.ismir.net/authors/call-for-papers
+
+  - id: ismir2026
+    title: ISMIR
+    year: 2026
+    full_name: International Society for Music Information Retrieval Conference
+    link: https://ismir2026.ismir.net/
+    deadline: "2026-04-20 23:59"
+    timezone: AoE
+    date: Nov 8–12, 2026
+    start: "2026-11-08"
+    end: "2026-11-12"
+    place: Abu Dhabi, UAE
+    categories: [music]
+    status: confirmed
+    note: Paper registration Apr 20 · full paper Apr 27 (passed)
+
+  - id: ismir2027
+    title: ISMIR
+    year: 2027
+    full_name: International Society for Music Information Retrieval Conference
+    link: https://ismir.net/conferences/
+    deadline: "2027-04-19 23:59"
+    timezone: AoE
+    date: TBA 2027
+    place: TBA
+    categories: [music]
+    status: estimated
+    note: Estimated from ISMIR 2026 timeline
+    monitor:
+      url: https://ismir.net/conferences/
+
+  - id: nime2027
+    title: NIME
+    year: 2027
+    full_name: International Conference on New Interfaces for Musical Expression
+    link: https://nime.org/
+    deadline: "2027-01-31 23:59"
+    timezone: AoE
+    date: TBA 2027
+    place: TBA
+    categories: [music]
+    status: estimated
+    note: Estimated from previous years
+    monitor:
+      url: https://nime.org/
+
+  - id: smc2027
+    title: SMC
+    year: 2027
+    full_name: Sound and Music Computing Conference
+    link: https://smcnetwork.org/
+    deadline: "2027-03-01 23:59"
+    timezone: AoE
+    date: TBA 2027
+    place: TBA
+    categories: [music]
+    status: estimated
+    note: Estimated from previous years
+    monitor:
+      url: https://smcnetwork.org/
+
+  - id: dafx2027
+    title: DAFx
+    year: 2027
+    full_name: International Conference on Digital Audio Effects
+    link: https://www.dafx.de/
+    deadline: "2027-04-05 23:59"
+    timezone: AoE
+    date: TBA 2027
+    place: TBA
+    categories: [music, audio]
+    status: estimated
+    note: Estimated from previous years
+    monitor:
+      url: https://www.dafx.de/
+
+  # ---------------- Audio / Speech ----------------
+  - id: dcase2026
+    title: DCASE Workshop
+    year: 2026
+    full_name: Workshop on Detection and Classification of Acoustic Scenes and Events
+    link: https://dcase.community/workshop2026/index
+    deadline: "2026-07-12 23:59"
+    abstract_deadline: "2026-07-05 23:59"
+    timezone: AoE
+    date: Oct 28–29, 2026
+    start: "2026-10-28"
+    end: "2026-10-29"
+    place: Cambridge, MA, USA (MIT)
+    categories: [audio]
+    status: confirmed
+
+  - id: icassp2027
+    title: ICASSP
+    year: 2027
+    full_name: IEEE International Conference on Acoustics, Speech and Signal Processing
+    link: https://2027.ieeeicassp.org/
+    deadline: "2026-09-16 23:59"
+    timezone: AoE
+    date: May 16–21, 2027
+    start: "2027-05-16"
+    end: "2027-05-21"
+    place: Toronto, Canada
+    categories: [audio]
+    status: confirmed
+    monitor:
+      url: https://2027.ieeeicassp.org/call-for-papers/
+
+  - id: interspeech2026
+    title: INTERSPEECH
+    year: 2026
+    full_name: Annual Conference of the International Speech Communication Association
+    link: https://interspeech2026.org/
+    deadline: "2026-02-25 23:59"
+    timezone: AoE
+    date: Sep 28 – Oct 1, 2026
+    start: "2026-09-28"
+    end: "2026-10-01"
+    place: Sydney, Australia
+    categories: [audio]
+    status: confirmed
+
+  - id: interspeech2027
+    title: INTERSPEECH
+    year: 2027
+    full_name: Annual Conference of the International Speech Communication Association
+    link: https://interspeech2027.org/
+    deadline: "2027-04-20 23:59"
+    timezone: AoE
+    date: Aug 29 – Sep 2, 2027
+    start: "2027-08-29"
+    end: "2027-09-02"
+    place: São Paulo, Brazil
+    categories: [audio]
+    status: confirmed
+    monitor:
+      url: https://interspeech2027.org/
+
+  - id: waspaa2027
+    title: WASPAA
+    year: 2027
+    full_name: IEEE Workshop on Applications of Signal Processing to Audio and Acoustics
+    link: https://waspaa.com/
+    deadline: "2027-04-15 23:59"
+    timezone: AoE
+    date: Oct 2027
+    place: Mohonk, NY, USA
+    categories: [audio]
+    status: estimated
+    note: Biennial (odd years) — estimated from WASPAA 2025
+    monitor:
+      url: https://waspaa.com/
+
+  - id: asru2027
+    title: ASRU
+    year: 2027
+    full_name: IEEE Automatic Speech Recognition and Understanding Workshop
+    link: https://asru2027.org/
+    deadline: "2027-07-01 23:59"
+    timezone: AoE
+    date: Dec 2027
+    place: TBA
+    categories: [audio]
+    status: estimated
+    note: Biennial (odd years) — estimated from ASRU 2025
+
+  # ---------------- Multimodal / Multimedia ----------------
+  - id: acmmm2026
+    title: ACM MM
+    year: 2026
+    full_name: ACM International Conference on Multimedia
+    link: https://2026.acmmm.org/
+    deadline: "2026-04-11 23:59"
+    timezone: AoE
+    date: Nov 10–14, 2026
+    start: "2026-11-10"
+    end: "2026-11-14"
+    place: Rio de Janeiro, Brazil
+    categories: [multimodal]
+    status: confirmed
+
+  - id: acmmm2027
+    title: ACM MM
+    year: 2027
+    full_name: ACM International Conference on Multimedia
+    link: https://www.sigmm.org/
+    deadline: "2027-04-10 23:59"
+    timezone: AoE
+    date: TBA 2027
+    place: TBA
+    categories: [multimodal]
+    status: estimated
+    note: Estimated from previous years
+    monitor:
+      url: https://www.sigmm.org/
+
+  - id: cvpr2027
+    title: CVPR
+    year: 2027
+    full_name: IEEE/CVF Conference on Computer Vision and Pattern Recognition
+    link: https://cvpr.thecvf.com/
+    deadline: "2026-11-15 23:59"
+    timezone: AoE
+    date: Jun 20–25, 2027
+    start: "2027-06-20"
+    end: "2027-06-25"
+    place: TBA
+    categories: [multimodal]
+    status: confirmed
+    monitor:
+      url: https://cvpr.thecvf.com/Conferences/2027
+
+  - id: icme2027
+    title: ICME
+    year: 2027
+    full_name: IEEE International Conference on Multimedia and Expo
+    link: https://www.ieeeicme.org/
+    deadline: "2026-12-15 23:59"
+    timezone: AoE
+    date: Jul 2027
+    place: TBA
+    categories: [multimodal]
+    status: estimated
+    note: Estimated from previous years
+    monitor:
+      url: https://www.ieeeicme.org/
+
+  # ---------------- AI / ML ----------------
+  - id: aaai2027
+    title: AAAI
+    year: 2027
+    full_name: AAAI Conference on Artificial Intelligence
+    link: https://aaai.org/conference/aaai/aaai-27/
+    deadline: "2026-07-28 23:59"
+    abstract_deadline: "2026-07-21 23:59"
+    timezone: AoE
+    date: Feb 16–23, 2027
+    start: "2027-02-16"
+    end: "2027-02-23"
+    place: Montréal, Canada
+    categories: [ai]
+    status: confirmed
+
+  - id: iclr2027
+    title: ICLR
+    year: 2027
+    full_name: International Conference on Learning Representations
+    link: https://iclr.cc/
+    deadline: "2026-09-24 23:59"
+    abstract_deadline: "2026-09-19 23:59"
+    timezone: AoE
+    date: Apr 2027
+    place: Brazil
+    categories: [ai]
+    status: confirmed
+    monitor:
+      url: https://iclr.cc/Conferences/2027
+
+  - id: neurips2026
+    title: NeurIPS
+    year: 2026
+    full_name: Conference on Neural Information Processing Systems
+    link: https://neurips.cc/
+    deadline: "2026-05-04 23:59"
+    timezone: AoE
+    date: Dec 6–12, 2026
+    start: "2026-12-06"
+    end: "2026-12-12"
+    place: Sydney, Australia
+    categories: [ai]
+    status: confirmed
+    note: Abstract May 4 · full paper May 11 (passed)
+
+  - id: icml2027
+    title: ICML
+    year: 2027
+    full_name: International Conference on Machine Learning
+    link: https://icml.cc/
+    deadline: "2027-01-28 23:59"
+    timezone: AoE
+    date: Jul 2027
+    place: TBA
+    categories: [ai]
+    status: estimated
+    note: Estimated from previous years
+    monitor:
+      url: https://icml.cc/Conferences/2027
+
+  - id: ijcai2027
+    title: IJCAI
+    year: 2027
+    full_name: International Joint Conference on Artificial Intelligence
+    link: https://www.ijcai.org/
+    deadline: "2027-01-20 23:59"
+    timezone: AoE
+    date: Aug 2027
+    place: TBA
+    categories: [ai]
+    status: estimated
+    note: Estimated from previous years
+    monitor:
+      url: https://www.ijcai.org/

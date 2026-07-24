@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>MIR·AI Deadlines — Music · Audio · Multimodal · AI</title>
+<meta name="description" content="Countdown tracker for research deadlines in Music Information Retrieval, Audio & Speech, Multimodal, and AI/ML.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏳</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#" aria-label="MIR·AI Deadlines home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-name">MIR·AI <em>Deadlines</em></span>
+    </a>
+    <div class="nav-actions">
+      <label class="search" for="search-input">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="search-input" type="search" placeholder="Search venues…" autocomplete="off" spellcheck="false">
+        <kbd>/</kbd>
+      </label>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="ico-sun" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="ico-moon" viewBox="0 0 24 24" fill="none"><path d="M20.5 14.1A8.6 8.6 0 0 1 9.9 3.5a8.6 8.6 0 1 0 10.6 10.6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow reveal">Music · Audio · Multimodal · AI</p>
+    <h1 class="reveal">Never miss<br><span class="grad">a deadline.</span></h1>
+    <p class="sub reveal">A living tracker for research venues in music information retrieval, audio &amp; speech, multimodal learning, and machine learning — auto-monitored, always current.</p>
+    <div class="hero-stats reveal" id="hero-stats"></div>
+    <div class="featured reveal" id="featured"></div>
+  </section>
+
+  <section class="board">
+    <div class="toolbar" id="toolbar">
+      <div class="pills" id="category-pills" role="tablist" aria-label="Filter by category"></div>
+      <label class="switch">
+        <input type="checkbox" id="show-past" checked>
+        <span class="track" aria-hidden="true"></span>
+        <span class="switch-label">Past</span>
+      </label>
+    </div>
+
+    <div class="grid" id="grid" aria-live="polite"></div>
+
+    <div class="past-divider" id="past-divider" hidden><span>Past deadlines</span></div>
+    <div class="grid grid-past" id="grid-past"></div>
+
+    <p class="empty" id="empty" hidden>No venues match your search.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p><span id="last-updated"></span> · deadlines in <strong>AoE (UTC−12)</strong> unless noted · <span class="legend"><i class="dot confirmed"></i>confirmed</span> <span class="legend"><i class="dot estimated"></i>estimated</span></p>
+    <p class="muted">Data auto-monitored weekly via GitHub Actions · maintained with ♥ for the MIR &amp; audio community</p>
+  </div>
+</footer>
+
+<script src="assets/js-yaml.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

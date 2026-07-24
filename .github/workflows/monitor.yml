@@ -1,0 +1,45 @@
+name: Monitor conference pages
+
+on:
+  schedule:
+    - cron: "0 0 * * 1,4"   # Mon & Thu 09:00 KST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests pyyaml anthropic
+
+      - name: Check conference pages
+        id: monitor
+        run: python scripts/monitor.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit updates
+        if: steps.monitor.outputs.changes == 'true'
+        run: |
+          git config user.name "deadline-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "auto: update conference data ($(date +%F))"
+          git push
+
+      - name: Open issue for detected changes
+        if: steps.monitor.outputs.changes == 'true'
+        run: |
+          BODY=$(python -c "import json;a=json.load(open('data/alerts.json'));print('\n'.join(f\"- **{x['id']}** — page changed ({x['url']})\" + (f' → auto-applied: `{x[\"applied\"]}`' if 'applied' in x else ' → needs manual review') for x in a))")
+          gh issue create --title "Conference page changes detected $(date +%F)" --body "$BODY" || true
+        env:
+          GH_TOKEN: ${{ github.token }}
