@@ -7,7 +7,7 @@ sdk: static
 app_file: index.html
 pinned: true
 license: mit
-short_description: Deadline tracker for MIR, Audio/Speech, Multimodal & AI venues
+short_description: Deadline tracker for MIR, Audio, Multimodal & AI venues
 ---
 
 # ⏳ MIR·AI Deadlines
