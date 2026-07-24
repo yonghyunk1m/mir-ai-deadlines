@@ -7,6 +7,8 @@
     audio:      { label: "Audio / Speech", color: "var(--c-audio)" },
     multimodal: { label: "Multimodal",   color: "var(--c-multimodal)" },
     ai:         { label: "AI / ML",      color: "var(--c-ai)" },
+    nlp:        { label: "NLP",          color: "var(--c-nlp)" },
+    hci:        { label: "HCI",          color: "var(--c-hci)" },
   };
 
   const state = { cat: "all", query: "", showPast: true, confs: [], meta: {} };

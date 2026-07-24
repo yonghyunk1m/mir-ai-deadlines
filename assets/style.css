@@ -26,6 +26,8 @@
   --c-audio: #0aa8a8;
   --c-multimodal: #e8871e;
   --c-ai: #3b82f6;
+  --c-nlp: #10a86a;
+  --c-hci: #e0447c;
 
   --radius: 20px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -47,6 +49,8 @@
   --c-audio: #2dd4bf;
   --c-multimodal: #fbbf24;
   --c-ai: #60a5fa;
+  --c-nlp: #34d399;
+  --c-hci: #f472b6;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }

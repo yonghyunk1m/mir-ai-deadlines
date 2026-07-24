@@ -256,6 +256,112 @@ conferences:
     monitor:
       url: https://www.ieeeicme.org/
 
+  # ---------------- HCI ----------------
+  - id: chi2027
+    title: CHI
+    year: 2027
+    full_name: ACM Conference on Human Factors in Computing Systems
+    link: https://chi2027.acm.org/
+    deadline: "2026-09-10 23:59"
+    timezone: AoE
+    date: Spring 2027
+    place: TBA
+    categories: [hci]
+    status: confirmed
+    monitor:
+      url: https://chi2027.acm.org/authors/papers/
+
+  - id: uist2026
+    title: UIST
+    year: 2026
+    full_name: ACM Symposium on User Interface Software and Technology
+    link: https://uist.acm.org/2026/
+    deadline: "2026-03-31 23:59"
+    abstract_deadline: "2026-03-24 23:59"
+    timezone: AoE
+    date: Nov 2–5, 2026
+    start: "2026-11-02"
+    end: "2026-11-05"
+    place: Detroit, MI, USA
+    categories: [hci]
+    status: confirmed
+
+  - id: uist2027
+    title: UIST
+    year: 2027
+    full_name: ACM Symposium on User Interface Software and Technology
+    link: https://uist.acm.org/
+    deadline: "2027-03-30 23:59"
+    timezone: AoE
+    date: TBA 2027
+    place: TBA
+    categories: [hci]
+    status: estimated
+    note: Estimated from UIST 2026 timeline
+    monitor:
+      url: https://uist.acm.org/2027/
+
+  # ---------------- Graphics / Creative ----------------
+  - id: siggraph2027
+    title: SIGGRAPH
+    year: 2027
+    full_name: ACM SIGGRAPH Conference (Technical Papers)
+    link: https://s2027.siggraph.org/
+    deadline: "2027-01-21 22:00"
+    timezone: UTC+0
+    date: Aug 2027
+    place: TBA
+    categories: [multimodal]
+    status: confirmed
+    note: Technical Papers deadline 22:00 UTC
+    monitor:
+      url: https://www.getpaperpilot.com/deadlines/siggraph-2027.html
+
+  # ---------------- NLP ----------------
+  - id: eacl2027
+    title: EACL
+    year: 2027
+    full_name: Conference of the European Chapter of the ACL (via ARR)
+    link: https://2027.eacl.org/
+    deadline: "2026-08-03 23:59"
+    timezone: AoE
+    date: Mar 9–14, 2027
+    start: "2027-03-09"
+    end: "2027-03-14"
+    place: Athens, Greece
+    categories: [nlp]
+    status: confirmed
+    note: ARR submission Aug 3 · commitment Oct 11, 2026
+
+  - id: emnlp2026
+    title: EMNLP
+    year: 2026
+    full_name: Conference on Empirical Methods in Natural Language Processing (via ARR)
+    link: https://2026.emnlp.org/
+    deadline: "2026-05-25 23:59"
+    timezone: AoE
+    date: Oct 24–29, 2026
+    start: "2026-10-24"
+    end: "2026-10-29"
+    place: Budapest, Hungary
+    categories: [nlp]
+    status: confirmed
+
+  - id: acl2027
+    title: ACL
+    year: 2027
+    full_name: Annual Meeting of the Association for Computational Linguistics (via ARR)
+    link: https://aclrollingreview.org/dates
+    deadline: "2027-01-15 23:59"
+    timezone: AoE
+    date: Summer 2027
+    place: TBA
+    categories: [nlp]
+    status: estimated
+    note: Estimated ARR cycle — check aclrollingreview.org
+    monitor:
+      url: https://aclrollingreview.org/dates
+
   # ---------------- AI / ML ----------------
   - id: aaai2027
     title: AAAI
