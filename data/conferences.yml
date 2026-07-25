@@ -141,6 +141,21 @@ conferences:
     categories: [audio]
     status: confirmed
 
+  - id: dcase2027
+    title: DCASE Workshop
+    year: 2027
+    full_name: Workshop on Detection and Classification of Acoustic Scenes and Events
+    link: https://dcase.community/
+    deadline: "2027-06-15 23:59"
+    timezone: AoE
+    date: Fall 2027
+    place: TBA
+    categories: [audio]
+    status: estimated
+    note: Annual — 2027 edition not yet announced
+    monitor:
+      url: https://dcase.community/
+
   - id: icassp2027
     title: ICASSP
     year: 2027
@@ -176,14 +191,15 @@ conferences:
     year: 2027
     full_name: Annual Conference of the International Speech Communication Association
     link: https://interspeech2027.org/
-    deadline: "2027-04-20 23:59"
+    deadline: "2027-02-24 23:59"
     timezone: AoE
     date: Aug 29 – Sep 2, 2027
     start: "2027-08-29"
     end: "2027-09-02"
     place: São Paulo, Brazil
     categories: [audio]
-    status: confirmed
+    status: estimated
+    note: Dates & venue official (ISCA); paper deadline not yet announced — estimated
     monitor:
       url: https://interspeech2027.org/
 
@@ -194,11 +210,11 @@ conferences:
     link: https://waspaa.com/
     deadline: "2027-04-15 23:59"
     timezone: AoE
-    date: Oct 2027
-    place: Mohonk, NY, USA
+    date: Fall 2027
+    place: TBA
     categories: [audio]
     status: estimated
-    note: Biennial (odd years) — estimated from WASPAA 2025
+    note: Biennial (odd years) — 2027 edition not yet announced, deadline estimated
     monitor:
       url: https://waspaa.com/
 
@@ -254,7 +270,8 @@ conferences:
     year: 2026
     full_name: ACM International Conference on Multimedia
     link: https://2026.acmmm.org/
-    deadline: "2026-04-11 23:59"
+    deadline: "2026-04-01 23:59"
+    abstract_deadline: "2026-03-25 23:59"
     timezone: AoE
     date: Nov 10–14, 2026
     start: "2026-11-10"
@@ -285,12 +302,13 @@ conferences:
     link: https://cvpr.thecvf.com/
     deadline: "2026-11-15 23:59"
     timezone: AoE
-    date: Jun 20–25, 2027
+    date: Jun 20–24, 2027
     start: "2027-06-20"
-    end: "2027-06-25"
-    place: TBA
+    end: "2027-06-24"
+    place: Seattle, WA, USA
     categories: [multimodal]
-    status: confirmed
+    status: estimated
+    note: Dates & venue official (CVF); paper deadline not yet announced — estimated
     monitor:
       url: https://cvpr.thecvf.com/
 
@@ -301,11 +319,13 @@ conferences:
     link: https://www.ieeeicme.org/
     deadline: "2026-12-15 23:59"
     timezone: AoE
-    date: Jul 2027
-    place: TBA
+    date: Jul 13–17, 2027
+    start: "2027-07-13"
+    end: "2027-07-17"
+    place: Xiamen, China
     categories: [multimodal]
     status: estimated
-    note: Estimated from previous years
+    note: Dates & venue official (IEEE CASS); paper deadline not yet announced — estimated
     monitor:
       url: https://www.ieeeicme.org/
 
@@ -317,8 +337,10 @@ conferences:
     link: https://chi2027.acm.org/
     deadline: "2026-09-10 23:59"
     timezone: AoE
-    date: Spring 2027
-    place: TBA
+    date: May 10–14, 2027
+    start: "2027-05-10"
+    end: "2027-05-14"
+    place: Pittsburgh, PA, USA
     categories: [hci]
     status: confirmed
     monitor:
@@ -359,14 +381,16 @@ conferences:
     title: SIGGRAPH
     year: 2027
     full_name: ACM SIGGRAPH Conference (Technical Papers)
-    link: https://s2027.siggraph.org/
+    link: https://www.siggraph.org/
     deadline: "2027-01-21 22:00"
     timezone: UTC+0
-    date: Aug 2027
-    place: TBA
+    date: Aug 8–12, 2027
+    start: "2027-08-08"
+    end: "2027-08-12"
+    place: Anaheim, CA, USA
     categories: [multimodal]
-    status: confirmed
-    note: Technical Papers deadline 22:00 UTC
+    status: estimated
+    note: Dates & venue official (ACM SIGGRAPH); Technical Papers deadline not yet announced — estimated
     monitor:
       url: https://www.getpaperpilot.com/deadlines/siggraph-2027.html
 
@@ -399,6 +423,21 @@ conferences:
     place: Budapest, Hungary
     categories: [nlp]
     status: confirmed
+
+  - id: emnlp2027
+    title: EMNLP
+    year: 2027
+    full_name: Conference on Empirical Methods in Natural Language Processing (via ARR)
+    link: https://aclrollingreview.org/dates
+    deadline: "2027-05-24 23:59"
+    timezone: AoE
+    date: TBA 2027
+    place: TBA
+    categories: [nlp]
+    status: estimated
+    note: Estimated ARR cycle — check aclrollingreview.org
+    monitor:
+      url: https://aclrollingreview.org/dates
 
   - id: acl2027
     title: ACL
@@ -439,10 +478,11 @@ conferences:
     deadline: "2026-09-24 23:59"
     abstract_deadline: "2026-09-19 23:59"
     timezone: AoE
-    date: Apr 2027
-    place: Brazil
+    date: TBA 2027
+    place: TBA
     categories: [ai]
-    status: confirmed
+    status: estimated
+    note: ICLR 2027 not yet announced — deadline/dates/venue estimated
     monitor:
       url: https://iclr.cc/
 
@@ -477,6 +517,22 @@ conferences:
     status: confirmed
     note: Portal opens Jun 30 · decisions Sep 18, 2026
 
+  - id: neurips2027
+    title: NeurIPS
+    year: 2027
+    full_name: Conference on Neural Information Processing Systems
+    link: https://neurips.cc/Conferences/FutureMeetings
+    deadline: "2027-05-14 23:59"
+    abstract_deadline: "2027-05-14 23:59"
+    timezone: AoE
+    date: Dec 2027
+    place: Europe (TBA)
+    categories: [ai]
+    status: estimated
+    note: Abstract May 14 · full paper May 21 — official CFP not yet posted
+    monitor:
+      url: https://neurips.cc/Conferences/FutureMeetings
+
   - id: icml2027
     title: ICML
     year: 2027
@@ -484,13 +540,13 @@ conferences:
     link: https://icml.cc/
     deadline: "2027-01-28 23:59"
     timezone: AoE
-    date: Jul 2027
-    place: TBA
+    date: TBA 2027
+    place: South America (TBA)
     categories: [ai]
     status: estimated
-    note: Estimated from previous years
+    note: Only region (South America) official; deadline/dates estimated
     monitor:
-      url: https://icml.cc/
+      url: https://icml.cc/Conferences/FutureMeetings
 
   - id: ijcai2027
     title: IJCAI
@@ -499,10 +555,10 @@ conferences:
     link: https://www.ijcai.org/
     deadline: "2027-01-20 23:59"
     timezone: AoE
-    date: Aug 2027
+    date: TBA 2027
     place: TBA
     categories: [ai]
     status: estimated
-    note: Estimated from previous years
+    note: IJCAI 2027 host/dates not yet announced — deadline estimated
     monitor:
-      url: https://www.ijcai.org/
+      url: https://www.ijcai.org/future_conferences
