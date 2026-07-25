@@ -239,7 +239,7 @@ conferences:
     categories: [multimodal]
     status: confirmed
     monitor:
-      url: https://cvpr.thecvf.com/Conferences/2027
+      url: https://cvpr.thecvf.com/
 
   - id: icme2027
     title: ICME
@@ -299,7 +299,7 @@ conferences:
     status: estimated
     note: Estimated from UIST 2026 timeline
     monitor:
-      url: https://uist.acm.org/2027/
+      url: https://uist.acm.org/
 
   # ---------------- Graphics / Creative ----------------
   - id: siggraph2027
@@ -391,7 +391,7 @@ conferences:
     categories: [ai]
     status: confirmed
     monitor:
-      url: https://iclr.cc/Conferences/2027
+      url: https://iclr.cc/
 
   - id: neurips2026
     title: NeurIPS
@@ -421,7 +421,7 @@ conferences:
     status: estimated
     note: Estimated from previous years
     monitor:
-      url: https://icml.cc/Conferences/2027
+      url: https://icml.cc/
 
   - id: ijcai2027
     title: IJCAI
