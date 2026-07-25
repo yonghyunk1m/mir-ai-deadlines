@@ -3,13 +3,16 @@
 # ------------------------------------------------------------
 # status: confirmed  -> officially announced by the venue
 #         estimated  -> predicted from previous years (shown dashed)
+# kind:   conference (default) | track | workshop | challenge | demo
+#         -> non-conference submissions (special tracks, workshops,
+#            grand challenges, LBD/demo) get a small label on the card
 # timezone: AoE (UTC-12) unless stated otherwise
 # deadline format: "YYYY-MM-DD HH:MM"
 # monitor.url: page watched by the auto-monitor GitHub Action
 # ============================================================
 
 meta:
-  updated: "2026-07-24"
+  updated: "2026-07-25"
 
 conferences:
   # ---------------- Music / MIR ----------------
@@ -25,6 +28,7 @@ conferences:
     end: "2026-11-12"
     place: Abu Dhabi, UAE
     categories: [music]
+    kind: demo
     status: estimated
     note: Estimated from previous years — LBD CFP not yet announced
     monitor:
@@ -104,6 +108,22 @@ conferences:
     note: Estimated from previous years
     monitor:
       url: https://www.dafx.de/
+
+  - id: neurips2026-aimusic
+    title: AI for Music
+    year: 2026
+    full_name: NeurIPS 2026 Workshop on AI for Music
+    link: https://aiformusicworkshop.github.io/
+    deadline: "2026-09-05 23:59"
+    timezone: AoE
+    date: Dec 2026
+    place: Sydney, Australia
+    categories: [music, ai]
+    kind: workshop
+    status: estimated
+    note: Recurring NeurIPS workshop — 2026 edition not yet confirmed
+    monitor:
+      url: https://aiformusicworkshop.github.io/
 
   # ---------------- Audio / Speech ----------------
   - id: dcase2026
@@ -194,6 +214,39 @@ conferences:
     categories: [audio]
     status: estimated
     note: Biennial (odd years) — estimated from ASRU 2025
+
+  - id: icassp2027-spgc
+    title: ICASSP SP Grand Challenge
+    year: 2027
+    full_name: ICASSP 2027 Signal Processing Grand Challenges (proposals)
+    link: https://2027.ieeeicassp.org/call-for-sp-grand-challenge-proposals/
+    deadline: "2026-07-31 23:59"
+    timezone: AoE
+    date: May 16–21, 2027
+    start: "2027-05-16"
+    end: "2027-05-21"
+    place: Toronto, Canada
+    categories: [audio]
+    kind: challenge
+    status: confirmed
+    note: Challenge proposal deadline — participant deadlines set per challenge
+    monitor:
+      url: https://2027.ieeeicassp.org/call-for-sp-grand-challenge-proposals/
+
+  - id: aes-europe2027
+    title: AES Europe
+    year: 2027
+    full_name: AES Europe Convention (Audio Engineering Society)
+    link: https://aes2.org/event/conventions/
+    deadline: "2027-01-15 23:59"
+    timezone: AoE
+    date: May 2027
+    place: Europe (TBA)
+    categories: [audio]
+    status: estimated
+    note: CFP not yet announced — estimated from prior AES Europe cycles
+    monitor:
+      url: https://aes2.org/event/conventions/
 
   # ---------------- Multimodal / Multimedia ----------------
   - id: acmmm2026
@@ -407,6 +460,22 @@ conferences:
     categories: [ai]
     status: confirmed
     note: Abstract May 4 · full paper May 11 (passed)
+
+  - id: neurips2026-creativeai
+    title: NeurIPS Creative AI
+    year: 2026
+    full_name: NeurIPS 2026 Creative AI Track (papers & artworks, theme "Agency")
+    link: https://neurips.cc/Conferences/2026/CallForCreativeAI
+    deadline: "2026-08-03 23:59"
+    timezone: AoE
+    date: Dec 6–12, 2026
+    start: "2026-12-06"
+    end: "2026-12-12"
+    place: Sydney, Australia
+    categories: [ai, multimodal]
+    kind: track
+    status: confirmed
+    note: Portal opens Jun 30 · decisions Sep 18, 2026
 
   - id: icml2027
     title: ICML

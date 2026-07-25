@@ -183,11 +183,13 @@
     const chips = (c.categories || [])
       .map((k) => `<span class="chip" style="--cat:${CATS[k].color}">${CATS[k].label}</span>`)
       .join("");
+    const kind = c.kind && c.kind !== "conference"
+      ? `<span class="kind">${c.kind}</span>` : "";
     return `
     <article class="card" style="--cat:${CATS[cat].color}" data-id="${c.id}" data-epoch="${c.epoch}">
       <div class="card-head">
         <div>
-          <div class="card-title">${c.title}<span class="yr">${c.year}</span></div>
+          <div class="card-title">${c.title}<span class="yr">${c.year}</span>${kind}</div>
           <div class="card-full">${c.full_name || ""}</div>
         </div>
         ${badge}
