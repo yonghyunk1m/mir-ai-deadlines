@@ -220,8 +220,8 @@ conferences:
     year: 2027
     full_name: ICASSP 2027 Signal Processing Grand Challenges (proposals)
     link: https://2027.ieeeicassp.org/call-for-sp-grand-challenge-proposals/
-    deadline: "2026-07-31 23:59"
-    timezone: AoE
+    deadline: "2026-07-27 23:59"
+    timezone: UTC-7 (PT)
     date: May 16–21, 2027
     start: "2027-05-16"
     end: "2027-05-21"
@@ -229,7 +229,7 @@ conferences:
     categories: [audio]
     kind: challenge
     status: confirmed
-    note: Challenge proposal deadline — participant deadlines set per challenge
+    note: Challenge proposal deadline (11:59PM US Pacific) — participant deadlines set per challenge
     monitor:
       url: https://2027.ieeeicassp.org/call-for-sp-grand-challenge-proposals/
 

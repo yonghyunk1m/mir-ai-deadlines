@@ -364,6 +364,16 @@ body {
 .countdown small { display: block; font: 600 10px var(--font); letter-spacing: .1em; text-transform: uppercase; color: var(--text-3); }
 .countdown.soon { color: var(--danger); }
 .countdown.past-txt { color: var(--text-3); font-weight: 700; }
+.countdown.est-txt { color: var(--text-3); font-weight: 700; font-size: 14px; font-style: italic; }
+
+/* estimated deadline box: visually softer + dashed to read as "not a firm date" */
+.deadline-box.est {
+  background: transparent;
+  border-style: dashed;
+  border-color: var(--border-strong);
+}
+.deadline-box.est .dl-date { color: var(--text-2); font-weight: 700; }
+.deadline-box.est .dl-local { font-style: italic; }
 
 .card-foot { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }

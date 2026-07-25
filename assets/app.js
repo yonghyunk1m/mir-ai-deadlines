@@ -47,6 +47,19 @@
     const m = c.deadline.match(/(\d{4})-(\d{2})-(\d{2})/);
     return m ? `${MONTHS[+m[2] - 1]} ${+m[3]}, ${m[1]}` : c.deadline;
   }
+  // estimated deadlines are guesses — show only an approximate month, never a precise day
+  function fmtMonth(c) {
+    const m = c.deadline.match(/(\d{4})-(\d{2})/);
+    return m ? `~ ${MONTHS[+m[2] - 1]} ${m[1]}` : "~ TBA";
+  }
+  // coarse "time left" for estimates: months when far out, else weeks — no ticking seconds
+  function coarseLeft(diff) {
+    if (diff <= 0) return "Closed";
+    const days = Math.round(diff / 864e5);
+    if (days >= 60) return `~${Math.round(days / 30)} mo left`;
+    if (days >= 14) return `~${Math.round(days / 7)} wk left`;
+    return `~${days} d left`;
+  }
   const fmtLocal = new Intl.DateTimeFormat(undefined, {
     month: "short", day: "numeric", hour: "2-digit", minute: "2-digit", timeZoneName: "short",
   });
@@ -122,7 +135,9 @@
     const upcoming = state.confs
       .filter((c) => c.epoch > Date.now())
       .sort((a, b) => a.epoch - b.epoch);
-    const next = upcoming[0];
+    // the hero's precise ticking countdown only makes sense for a CONFIRMED date;
+    // fall back to the soonest overall only if nothing is confirmed yet
+    const next = upcoming.find((c) => c.status === "confirmed") || upcoming[0];
     const n = counts();
 
     const stats = document.getElementById("hero-stats");
@@ -185,6 +200,29 @@
       .join("");
     const kind = c.kind && c.kind !== "conference"
       ? `<span class="kind">${c.kind}</span>` : "";
+    const est = c.status === "estimated";
+    // Estimated deadlines are predictions — present them as an approximate month
+    // with a coarse "time left", never a precise ticking countdown, so a guess
+    // never masquerades as a confirmed date.
+    const dlBox = est && !r.past
+      ? `<div class="deadline-box est">
+          <div class="dl-when">
+            <div class="dl-label">Est. deadline</div>
+            <div class="dl-date">${fmtMonth(c)}</div>
+            <div class="dl-local">predicted — not yet announced</div>
+          </div>
+          <div class="countdown est-txt" data-cd data-est="1">${coarseLeft(r.diff)}</div>
+        </div>`
+      : `<div class="deadline-box">
+          <div class="dl-when">
+            <div class="dl-label">Deadline · ${c.timezone || "AoE"}</div>
+            <div class="dl-date">${fmtDeadline(c)}</div>
+            <div class="dl-local">${fmtLocal.format(c.epoch)} local</div>
+          </div>
+          <div class="countdown ${r.past ? "past-txt" : r.diff < 7 * 864e5 ? "soon" : ""}" data-cd>
+            ${r.past ? "Closed" : ""}
+          </div>
+        </div>`;
     return `
     <article class="card" style="--cat:${CATS[cat].color}" data-id="${c.id}" data-epoch="${c.epoch}">
       <div class="card-head">
@@ -198,16 +236,7 @@
         <div class="row">${icoPin}<span>${c.place || "TBA"}</span></div>
         <div class="row">${icoCal}<span>${c.date || "TBA"}</span></div>
       </div>
-      <div class="deadline-box">
-        <div class="dl-when">
-          <div class="dl-label">Deadline · ${c.timezone || "AoE"}</div>
-          <div class="dl-date">${fmtDeadline(c)}</div>
-          <div class="dl-local">${fmtLocal.format(c.epoch)} local</div>
-        </div>
-        <div class="countdown ${r.past ? "past-txt" : r.diff < 7 * 864e5 ? "soon" : ""}" data-cd>
-          ${r.past ? "Closed" : ""}
-        </div>
-      </div>
+      ${dlBox}
       ${c.note ? `<div class="note">${c.note}</div>` : ""}
       <div class="card-foot">
         <div class="chips">${chips}</div>
@@ -261,6 +290,7 @@
       const epoch = +el.closest(".card").dataset.epoch;
       const r = remaining(epoch);
       if (r.past) { el.textContent = "Closed"; el.classList.add("past-txt"); return; }
+      if (el.dataset.est) { el.textContent = coarseLeft(r.diff); return; }
       el.textContent = `${r.days}d ${pad(r.hrs)}:${pad(r.min)}:${pad(r.sec)}`;
       el.classList.toggle("soon", r.diff < 7 * 864e5);
     });
