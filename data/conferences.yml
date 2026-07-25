@@ -109,22 +109,6 @@ conferences:
     monitor:
       url: https://www.dafx.de/
 
-  - id: neurips2026-aimusic
-    title: AI for Music
-    year: 2026
-    full_name: NeurIPS 2026 Workshop on AI for Music
-    link: https://aiformusicworkshop.github.io/
-    deadline: "2026-09-05 23:59"
-    timezone: AoE
-    date: Dec 2026
-    place: Sydney, Australia
-    categories: [music, ai]
-    kind: workshop
-    status: estimated
-    note: Recurring NeurIPS workshop — 2026 edition not yet confirmed
-    monitor:
-      url: https://aiformusicworkshop.github.io/
-
   # ---------------- Audio / Speech ----------------
   - id: dcase2026
     title: DCASE Workshop
