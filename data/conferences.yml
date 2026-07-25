@@ -330,6 +330,24 @@ conferences:
     monitor:
       url: https://chi2027.acm.org/authors/papers/
 
+  - id: chi2027-posters
+    title: CHI Posters
+    year: 2027
+    full_name: CHI 2027 Posters & Interactive Demos (formerly Late-Breaking Work)
+    link: https://chi2027.acm.org/
+    deadline: "2027-01-21 23:59"
+    timezone: AoE
+    date: May 10–14, 2027
+    start: "2027-05-10"
+    end: "2027-05-14"
+    place: Pittsburgh, PA, USA
+    categories: [hci]
+    kind: poster
+    status: confirmed
+    note: Notification Feb 18, 2027 · Interactive Demos share this deadline
+    monitor:
+      url: https://chi2027.acm.org/
+
   - id: uist2026
     title: UIST
     year: 2026
