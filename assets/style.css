@@ -28,6 +28,8 @@
   --c-ai: #3b82f6;
   --c-nlp: #10a86a;
   --c-hci: #e0447c;
+  --c-vision: #6366f1;
+  --c-graphics: #d1495b;
 
   --radius: 20px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -51,6 +53,8 @@
   --c-ai: #60a5fa;
   --c-nlp: #34d399;
   --c-hci: #f472b6;
+  --c-vision: #818cf8;
+  --c-graphics: #f47272;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }

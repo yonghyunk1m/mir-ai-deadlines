@@ -6,6 +6,8 @@
     music:      { label: "Music / MIR",  color: "var(--c-music)" },
     audio:      { label: "Audio / Speech", color: "var(--c-audio)" },
     multimodal: { label: "Multimodal",   color: "var(--c-multimodal)" },
+    vision:     { label: "Vision / CV",  color: "var(--c-vision)" },
+    graphics:   { label: "Graphics",     color: "var(--c-graphics)" },
     ai:         { label: "AI / ML",      color: "var(--c-ai)" },
     nlp:        { label: "NLP",          color: "var(--c-nlp)" },
     hci:        { label: "HCI",          color: "var(--c-hci)" },

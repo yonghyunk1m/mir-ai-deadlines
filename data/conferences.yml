@@ -88,7 +88,7 @@ conferences:
     timezone: AoE
     date: TBA 2027
     place: TBA
-    categories: [music]
+    categories: [music, audio]
     status: estimated
     note: Estimated from previous years
     monitor:
@@ -290,7 +290,7 @@ conferences:
     start: "2027-06-20"
     end: "2027-06-24"
     place: Seattle, WA, USA
-    categories: [multimodal]
+    categories: [vision, multimodal]
     status: estimated
     note: Dates & venue official (CVF); paper deadline not yet announced — estimated
     monitor:
@@ -390,7 +390,7 @@ conferences:
     start: "2027-08-08"
     end: "2027-08-12"
     place: Anaheim, CA, USA
-    categories: [multimodal]
+    categories: [graphics]
     status: estimated
     note: Dates & venue official (ACM SIGGRAPH); Technical Papers deadline not yet announced — estimated
     monitor:
