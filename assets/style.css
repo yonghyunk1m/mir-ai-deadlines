@@ -121,6 +121,15 @@ body {
 .brand-mark svg { width: 17px; height: 17px; }
 .brand-name { font-weight: 700; font-size: 16px; letter-spacing: -.02em; }
 .brand-name em { font-style: normal; font-weight: 500; color: var(--text-2); }
+.brand-kanji {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic",
+               "Apple SD Gothic Neo", "Noto Sans CJK KR", sans-serif;
+  font-size: 13px; font-weight: 600; letter-spacing: .04em; cursor: help;
+  padding-left: 9px; margin-left: 8px; border-left: 1px solid var(--border-strong);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+@media (max-width: 640px) { .brand-kanji { display: none; } }
 
 .nav-actions { display: flex; align-items: center; gap: 10px; }
 
@@ -161,6 +170,23 @@ body {
   max-width: 1200px; margin: 0 auto;
   padding: 84px 24px 40px; text-align: center;
 }
+/* 未来 · 미래 · mirai — the wordplay lockup above the eyebrow */
+.mirai {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  margin-bottom: 18px; font-size: 15px; font-weight: 600;
+  letter-spacing: .02em; line-height: 1;
+}
+.mirai .hanja, .mirai .hangul {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic",
+               "Apple SD Gothic Neo", "Noto Sans CJK KR", sans-serif;
+  font-size: 16px; letter-spacing: .06em;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2) 60%, #f06292);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.mirai .romaji { color: var(--text-2); font-style: italic; }
+.mirai .mean { color: var(--text-3); font-weight: 500; }
+.mirai .sep { color: var(--text-3); opacity: .55; font-weight: 400; }
+
 .eyebrow {
   display: inline-block; font: 600 13px/1 var(--font); letter-spacing: .14em;
   text-transform: uppercase; color: var(--accent);
@@ -414,6 +440,17 @@ body {
 .footer { border-top: 1px solid var(--border); padding: 32px 24px 44px; }
 .footer-inner { max-width: 1200px; margin: 0 auto; text-align: center; font-size: 13px; color: var(--text-2); }
 .footer .muted { color: var(--text-3); margin-top: 6px; font-size: 12px; }
+.footer .brand-story { margin-top: 14px; font-size: 12.5px; color: var(--text-2); }
+.footer .brand-story strong {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 700;
+}
+.footer .brand-story em { font-style: italic; color: var(--text); }
+.footer .brand-story .cjk {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic",
+               "Apple SD Gothic Neo", "Noto Sans CJK KR", sans-serif;
+  color: var(--text); letter-spacing: .04em;
+}
 .legend { display: inline-flex; align-items: center; gap: 5px; margin-left: 8px; }
 .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
 .dot.confirmed { background: #23c378; }
